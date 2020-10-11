@@ -12,7 +12,7 @@ if len(sys.argv) < 2:
 
 location = ' '.join(sys.argv[1:])
 
-# Download the JSON data from OpenWeatherMap.org's API
+# Download the JSON data from OpenWeatherMap.org's Current Weather Data API
 url = 'https://api.openweathermap.org/data/2.5/weather?q={},&units=imperial&appid={}'.format(location, APPID)
 
 response = requests.get(url)
